@@ -1,0 +1,354 @@
+<html>
+<head>
+    <style>
+        td {
+            border: 1px solid #cecfd5;
+            padding: 10px 15px;
+        }
+    </style>
+    <meta charset=utf-8>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header th:replace="fragments/header"/>
+<table style="border-spacing: 4px; border: 1px">
+    <tr style="text-align: center">
+        <td>Number</td>
+        <td>Name</td>
+        <td>Location</td>
+        <td>Work Hours</td>
+    </tr>
+    <tr>
+        <td>1.</td>
+        <td>Ремедиум</td>
+        <td><a href="https://maps.google.com/?q=42.0061233,21.3816633">https://maps.google.com/?q=42.0061233,21.3816633</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>Зегин</td>
+        <td><a href="https://maps.google.com/?q=41.9984708,21.4226797">https://maps.google.com/?q=41.9984708,21.4226797</a></td>
+        <td>24/7</td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>Зегин</td>
+        <td><a href="https://maps.google.com/?q=42.0023086,21.4626489">https://maps.google.com/?q=42.0023086,21.4626489</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Зегин</td>
+        <td><a href="https://maps.google.com/?q=41.9932326,21.4154083">https://maps.google.com/?q=41.9932326,21.4154083</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>5.</td>
+        <td>Apteka Biofit</td>
+        <td><a href="https://maps.google.com/?q=41.9835895,21.4295599">https://maps.google.com/?q=41.9835895,21.4295599</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>6.</td>
+        <td>Apteka Biofit</td>
+        <td><a href="https://maps.google.com/?q=41.9940569,21.4008928">https://maps.google.com/?q=41.9940569,21.4008928</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>7.</td>
+        <td>Zegin</td>
+        <td><a href="https://maps.google.com/?q=42.0032564,21.3978776">https://maps.google.com/?q=42.0032564,21.3978776</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>8.</td>
+        <td>Херба</td>
+        <td><a href="https://maps.google.com/?q=42.0034289,21.3985661">https://maps.google.com/?q=42.0034289,21.3985661</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>9.</td>
+        <td>Уни Медикал</td>
+        <td><a href="https://maps.google.com/?q=41.9919776,21.4219509">https://maps.google.com/?q=41.9919776,21.4219509</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>10.</td>
+        <td>Зегин</td>
+        <td><a href="https://maps.google.com/?q=41.9869002,21.4308199">https://maps.google.com/?q=41.9869002,21.4308199</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>11.</td>
+        <td>Еурофарм</td>
+        <td><a href="https://maps.google.com/?q=42.0161642,21.4403511">https://maps.google.com/?q=42.0161642,21.4403511</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>12.</td>
+        <td>Зегин</td>
+        <td><a href="https://maps.google.com/?q=41.9960357,21.4078311">https://maps.google.com/?q=41.9960357,21.4078311</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>13.</td>
+        <td>Аптека Ремедиум Лек</td>
+        <td><a href="https://maps.google.com/?q=42.0026568,21.4053418">https://maps.google.com/?q=42.0026568,21.4053418</a> </td>
+        <td>Mo-Fr 07:30-21:00; Su off; Sa 08:00-16:00</td>
+    </tr>
+    <tr>
+        <td>14.</td>
+        <td>Аптека Виола</td>
+        <td><a href="https://maps.google.com/?q=41.9811356,21.4324038">https://maps.google.com/?q=41.9811356,21.4324038</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>15.</td>
+        <td>Betty</td>
+        <td><a href="https://maps.google.com/?q=42.0032478,21.4078707">https://maps.google.com/?q=42.0032478,21.4078707</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>16.</td>
+        <td>Zegin</td>
+        <td><a href="https://maps.google.com/?q=41.9910923,21.4460324">https://maps.google.com/?q=41.9910923,21.4460324</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>17.</td>
+        <td>Еурофарм</td>
+        <td><a href="https://maps.google.com/?q=41.9943079,21.4311375">https://maps.google.com/?q=41.9943079,21.4311375</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>18.</td>
+        <td>Зегин (Карпош 4)</td>
+        <td><a href="https://maps.google.com/?q=42.0050186,21.3834081">https://maps.google.com/?q=42.0050186,21.3834081</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>19.</td>
+        <td>ЕуроФарм Тафталиџе</td>
+        <td><a href="https://maps.google.com/?q=42.0009171,21.3902099">https://maps.google.com/?q=42.0009171,21.3902099</a> </td>
+        <td>Mo-Sa 08:00-22:00; Su 08:00-14:00</td>
+    </tr>
+    <tr>
+        <td>20.</td>
+        <td>ZEGIN</td>
+        <td><a href="https://maps.google.com/?q=41.9820014,21.4735236">https://maps.google.com/?q=41.9820014,21.4735236</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>21.</td>
+        <td>Виола</td>
+        <td><a href="https://maps.google.com/?q=41.9899658,21.4198380">https://maps.google.com/?q=41.9899658,21.4198380</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>22.</td>
+        <td>Betty</td>
+        <td><a href="https://maps.google.com/?q=41.9898127,21.4196296">https://maps.google.com/?q=41.9898127,21.4196296</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>23.</td>
+        <td>Зегин</td>
+        <td><a href="https://maps.google.com/?q=41.9850045,21.4377527">https://maps.google.com/?q=41.9850045,21.4377527</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>24.</td>
+        <td>Зегин (стара градска болница)</td>
+        <td><a href="https://maps.google.com/?q=41.9928765,21.4341995">https://maps.google.com/?q=41.9928765,21.4341995</a> </td>
+        <td>24/7</td>
+    </tr>
+    <tr>
+        <td>25.</td>
+        <td>Опоум</td>
+        <td><a href="https://maps.google.com/?q=41.9969243,21.4085080">https://maps.google.com/?q=41.9969243,21.4085080</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>26.</td>
+        <td>Виола</td>
+        <td><a href="https://maps.google.com/?q=41.9958705,21.4276434">https://maps.google.com/?q=41.9958705,21.4276434</a> </td>
+        <td>Mo-Fr 07:30-22:00; Sa 08:00-22:00; Su 09:00-17:00</td>
+    </tr>
+    <tr>
+        <td>27.</td>
+        <td>Зегин</td>
+        <td><a href="https://maps.google.com/?q=41.9954508,21.4273767">https://maps.google.com/?q=41.9954508,21.4273767</a> </td>
+        <td>Mo-Fr 07:00-22:00; Sa 08:00-22:00; Su 08:00-16:00</td>
+    </tr>
+    <tr>
+        <td>28.</td>
+        <td>Зегин</td>
+        <td><a href="https://maps.google.com/?q=42.0024902,21.4394269">https://maps.google.com/?q=42.0024902,21.4394269</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>29.</td>
+        <td>Eurofarm</td>
+        <td><a href="https://maps.google.com/?q=42.0028618,21.4010137">https://maps.google.com/?q=42.0028618,21.4010137</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>30.</td>
+        <td>Аптека</td>
+        <td><a href="https://maps.google.com/?q=41.9964634,21.4403185">https://maps.google.com/?q=41.9964634,21.4403185</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>31.</td>
+        <td>Zegin</td>
+        <td><a href="https://maps.google.com/?q=41.9995676,21.4266118">https://maps.google.com/?q=41.9995676,21.4266118</a> </td>
+        <td>Mo-Fr 07:00-21:00; Sa 08:00-21:00</td>
+    </tr>
+    <tr>
+        <td>32.</td>
+        <td>Zegin</td>
+        <td><a href="https://maps.google.com/?q=41.9985010,21.4224854">https://maps.google.com/?q=41.9985010,21.4224854</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>33.</td>
+        <td>Betty</td>
+        <td><a href="https://maps.google.com/?q=42.0004895,21.4152598">https://maps.google.com/?q=42.0004895,21.4152598</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>34.</td>
+        <td>Bett</td>
+        <td><a href="https://maps.google.com/?q=42.0105657,21.4406066">https://maps.google.com/?q=42.0105657,21.4406066</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>35.</td>
+        <td>Аптека</td>
+        <td><a href="https://maps.google.com/?q=41.9907383,21.4259201">https://maps.google.com/?q=41.9907383,21.4259201</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>36.</td>
+        <td>АПТЕКА BARNATORE</td>
+        <td><a href="https://maps.google.com/?q=42.0086285,21.4431560">https://maps.google.com/?q=42.0086285,21.4431560</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>37.</td>
+        <td>Зегин</td>
+        <td><a href="https://maps.google.com/?q=42.0082379,21.4434403">https://maps.google.com/?q=42.0082379,21.4434403</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>38.</td>
+        <td>Аптека</td>
+        <td><a href="https://maps.google.com/?q=42.0075593,21.4429723">https://maps.google.com/?q=42.0075593,21.4429723</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>39.</td>
+        <td>BETTY</td>
+        <td><a href="https://maps.google.com/?q=42.0151742,21.4438641">https://maps.google.com/?q=42.0151742,21.4438641</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>40.</td>
+        <td>Zegin</td>
+        <td><a href="https://maps.google.com/?q=42.0132431,21.4393607">https://maps.google.com/?q=42.0132431,21.4393607</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>41.</td>
+        <td>Vita Farm</td>
+        <td><a href="https://maps.google.com/?q=42.0128994,21.4356244">https://maps.google.com/?q=42.0128994,21.4356244</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>42.</td>
+        <td>Еурофарм Аптека</td>
+        <td><a href="https://maps.google.com/?q=41.9751104,21.4722875">https://maps.google.com/?q=41.9751104,21.4722875</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>43.</td>
+        <td>Еурофарм</td>
+        <td><a href="https://maps.google.com/?q=41.9771244,21.4438185">https://maps.google.com/?q=41.9771244,21.4438185</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>44.</td>
+        <td>Еурофарм</td>
+        <td><a href="https://maps.google.com/?q=41.9762181,21.4389590">https://maps.google.com/?q=41.9762181,21.4389590</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>45.</td>
+        <td>Zegin</td>
+        <td><a href="https://maps.google.com/?q=41.9949134,21.4245363">https://maps.google.com/?q=41.9949134,21.4245363</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>46.</td>
+        <td>Betty</td>
+        <td><a href="https://maps.google.com/?q=41.9982536,21.4226605">https://maps.google.com/?q=41.9982536,21.4226605</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>47.</td>
+        <td>Еурофарм аптека</td>
+        <td><a href="https://maps.google.com/?q=42.0037470,21.4672077">https://maps.google.com/?q=42.0037470,21.4672077</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>48.</td>
+        <td>Еурофарм</td>
+        <td><a href="https://maps.google.com/?q=41.9968203,21.4265268">https://maps.google.com/?q=41.9968203,21.4265268</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>49.</td>
+        <td>Зегин - Моја Аптека</td>
+        <td><a href="https://maps.google.com/?q=42.0026365,21.4114399">https://maps.google.com/?q=42.0026365,21.4114399</a> </td>
+        <td>Mo-Fr 07:00-21:00; Sa 08:00-21:00; Su off</td>
+    </tr>
+    <tr>
+        <td>50.</td>
+        <td>Еурофарм</td>
+        <td><a href="https://maps.google.com/?q=41.9933214,21.4288200">https://maps.google.com/?q=41.9933214,21.4288200</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>51.</td>
+        <td>Eurofarm</td>
+        <td><a href="https://maps.google.com/?q=41.9896172,21.4359938">https://maps.google.com/?q=41.9896172,21.4359938</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>52.</td>
+        <td>Zegin</td>
+        <td><a href="https://maps.google.com/?q=41.9922394,21.4284796">https://maps.google.com/?q=41.9922394,21.4284796</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>53.</td>
+        <td>Betty</td>
+        <td><a href="https://maps.google.com/?q=42.0005157,21.4152038">https://maps.google.com/?q=42.0005157,21.4152038</a> </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>54.</td>
+        <td>ZEGIN</td>
+        <td><a href="https://maps.google.com/?q=42.0015831,21.4609458">https://maps.google.com/?q=42.0015831,21.4609458</a> </td>
+        <td></td>
+    </tr>
+</table>
+
+</body>
+</html>
+
