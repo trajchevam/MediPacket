@@ -1,0 +1,19 @@
+
+
+<form th:action="@{/login}" th:method="post">
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit">Login</button>
+  </div>
+  <div th:if="${hasError}">
+    Incorrect credentials
+  </div>
+
+</form>
+

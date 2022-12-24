@@ -1,0 +1,48 @@
+<style>
+    .card {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+</style>
+
+<section class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card col d-flex justify-content-center">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-center">Пакет 1</h5>
+                    <ul class="card-text text-left">
+                        <li>Лек 1</li>
+                        <li>Лек 2</li>
+                        <li>Лек 3</li>
+                        <li>Лек 4</li>
+                        <li>Лек 5</li>
+                    </ul>
+                    <form th:method="POST" th:action="@{/pharmacies/packet1}">
+                        <input type="submit" value="Одбери" >
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-center">Пакет 2</h5>
+                    <ul class="card-text text-left">
+                        <li>Лек 1</li>
+                        <li>Лек 2</li>
+                        <li>Лек 3</li>
+                        <li>Лек 4</li>
+                        <li>Лек 5</li>
+                    </ul>
+                    <form th:method="POST" th:action="@{/pharmacies/packet2}">
+                        <input type="submit" value="Одбери">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
