@@ -1,0 +1,54 @@
+<style>
+    .card {
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .col-sm-6{
+         background-color: antiquewhite;
+         border-radius: 5%;
+     }
+
+</style>
+
+<section class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card col d-flex justify-content-center">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-center">Пакет: Прва Помош</h5>
+                    <ul class="card-text text-left">
+                        <li>Газа</li>
+                        <li>Фластер</li>
+                        <li>Етанол</li>
+                        <li>Ножички</li>
+                        <li>Завој</li>
+                    </ul>
+                    <form th:method="POST" th:action="@{/pharmacies/packet1}">
+                        <input type="submit" value="Одбери" >
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-center">Пакет: Настинка</h5>
+                    <ul class="card-text text-left">
+                        <li>Fervex</li>
+                        <li>Витамин-Ц</li>
+                        <li>Септолете</li>
+                        <li>Топломер</li>
+                        <li>Парацетамол</li>
+                    </ul>
+                    <form th:method="POST" th:action="@{/pharmacies/packet2}">
+                        <input type="submit" value="Одбери">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

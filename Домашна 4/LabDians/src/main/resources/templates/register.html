@@ -1,0 +1,38 @@
+<div th:if="${username} == null">
+  <div class="container">
+    <h1 th:if="${hasError}" th:text="${error}"></h1>
+  </div>
+  <form th:method="POST" th:action="@{/register}">
+    <div class="container">
+      <form class="form-signin mt-xl-5" method="post" action="/register">
+        <h2 class="form-signin-heading">Register</h2>
+        <p>
+          <label for="username" class="sr-only">Username</label>
+          <input type="text" id="username" name="username" class="form-control" placeholder="Username" required=""
+                 autofocus="">
+        </p>
+        <p>
+          <label for="password" class="sr-only">Password</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="Password"
+                 required="">
+        </p>
+        <p>
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Name" required="" autofocus="">
+        </p>
+        <p>
+          <label for="email" class="sr-only">Email</label>
+          <input type="text" id="email" name="email" class="form-control" placeholder="Email" required=""
+                 autofocus="">
+        </p>
+        <p>
+        </p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+      </form>
+      <a href="/login" class="btn btn-block btn-light">Already have an account? Login here!</a>
+      <p class="text-center">Внесете информации нема да бидат злоупотребени и ќе бидат искористени само за целите на сајтот.</p>
+    </div>
+  </form>
+</div>
+<div th:if="${username} != null"></div>
+
